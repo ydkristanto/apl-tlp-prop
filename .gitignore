@@ -3,4 +3,7 @@
 .RData
 .Ruserdata
 
-docs/shinylive/webr
+docs/shinylive/webr/repl/
+docs/shinylive/webr/tests/
+docs/shinylive/webr/vfs/
+docs/shinylive/webr/repl/webR
