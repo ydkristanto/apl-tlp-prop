@@ -172,7 +172,7 @@ server <- shinyServer(function(input, output) {
   # text
   output$num.samples = renderText({
     k = input$k
-    paste0("... dan seterusnya sampel sampel ke-", k,".")
+    paste0("... dan seterusnya sampai sampel ke-", k,".")
   })
   
   # plot 3
