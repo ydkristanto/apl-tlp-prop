@@ -3,12 +3,4 @@
 .RData
 .Ruserdata
 
-docs/shinylive/webr/R.bin.wasm
-docs/shinylive/webr/R.bin.data
-docs/shinylive/webr/R.bin.js
-docs/shinylive/webr/libRlapack.so
-
-docs/shinylive/webr/repl/
-docs/shinylive/webr/tests/
-docs/shinylive/webr/vfs/
-docs/shinylive/webr/webR/
+docs/shinylive/webr/
