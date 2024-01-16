@@ -9,7 +9,7 @@ ui <-shinyUI(fluidPage(
   
   titlePanel("Teorema Limit Pusat untuk Proposi",
              windowTitle = "TLP untuk Proporsi"),
-  
+  withMathJax(),
   sidebarPanel(
     wellPanel(
       sliderInput("n", 
@@ -78,7 +78,7 @@ ui <-shinyUI(fluidPage(
           dibagi dengan ukuran sampelnya, yang dapat dinyatakan seperti 
                         berikut."),
                       align = "justify"),
-                  div(withMathJax(p("$$SE = \\sqrt{\\frac{p(1-p)}{n}}$$"))),
+                  div(p("$$SE = \\sqrt{\\frac{p(1-p)}{n}}$$")),
                   div(p("Aplikasi ini merupakan bentuk modifikasi (atau 
           lebih tepatnya terjemahan) dari",
                         a("aplikasi serupa", href = 
