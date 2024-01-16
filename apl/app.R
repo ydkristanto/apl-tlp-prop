@@ -88,6 +88,8 @@ ui <-shinyUI(fluidPage(
           Pengembang aplikasi ini adalah",
                         a("Yosep Dwi Kristanto,", href = "https://people.usd.ac.id/~ydkristanto/", target = "_blank"), "seorang dosen dan peneliti di 
             program studi ", a("Pendidikan Matematika,", href = "https://usd.ac.id/s1pmat", target = "_blank"), a("Universitas Sanata Dharma,", href = "https://www.usd.ac.id/", target = "_blank"), "Yogyakarta."), align = "justify"),
+                  div(p("Aplikasi ini dikembangkan dengan menggunakan bahasa 
+                        pemrograman", a("R", href = "https://www.R-project.org/", target = "_blank"), "dan paket", a("Shiny.", href = "https://CRAN.R-project.org/package=shiny", target = "_blank"), "Selain itu, paket", a("shinylive", href = "https://posit-dev.github.io/r-shinylive/", target = "_blank"), "juga digunakan untuk mengekspor aplikasi Shiny tersebut agar dapat dibuka di web statis.")),
                   hr()
                 )
                 
