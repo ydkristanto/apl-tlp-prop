@@ -62,7 +62,35 @@ ui <-shinyUI(fluidPage(
                                              align = "justify"), br()),
                                   column(4, br(),
                                          plotOutput("pop.dist1",
-                                                    height = "200px"))))
+                                                    height = "200px")))),
+                
+                tabPanel(
+                  title = "Informasi",
+                  # Informasi aplikasi ----
+                  h2("Informasi Aplikasi"),
+                  div(p("Tujuan aplikasi Shiny ini adalah untuk mendeskripsikan Teorema
+          Limit Pusat untuk proporsi. Berdasarkan teorema ini, ketika
+          ukuran sampelnya besar (banyak gagal atau suksesnya minimal 10), 
+          distribusi sampling proporsinya mendekati
+          normal dengan rerata yang sama dengan proporsi populasinya dan 
+          simpangan baku yang sama dengan akar kuadrat dari hasil kali 
+          proporsi populasi dan satu dikurangi proporsi tersebut, kemudian 
+          dibagi dengan ukuran sampelnya, yang dapat dinyatakan seperti 
+                        berikut."),
+                      align = "justify"),
+                  div(withMathJax(p("$$SE = \\sqrt{\\frac{p(1-p)}{n}}$$"))),
+                  div(p("Aplikasi ini merupakan bentuk modifikasi (atau 
+          lebih tepatnya terjemahan) dari",
+                        a("aplikasi serupa", href = 
+                            "https://openintro.shinyapps.io/CLT_prop/",
+                          target = "_blank"),
+                        "yang dikembangkan oleh Mine Çetinkaya-Rundel. 
+          Pengembang aplikasi ini adalah",
+                        a("Yosep Dwi Kristanto,", href = "https://people.usd.ac.id/~ydkristanto/", target = "_blank"), "seorang dosen dan peneliti di 
+            program studi ", a("Pendidikan Matematika,", href = "https://usd.ac.id/s1pmat", target = "_blank"), a("Universitas Sanata Dharma,", href = "https://www.usd.ac.id/", target = "_blank"), "Yogyakarta."), align = "justify"),
+                  hr()
+                )
+                
     )
   )
 ))
