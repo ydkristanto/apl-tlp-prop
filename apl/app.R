@@ -9,7 +9,7 @@ ui <-shinyUI(fluidPage(
   
   titlePanel("Teorema Limit Pusat untuk Proposi",
              windowTitle = "TLP untuk Proporsi"),
-  withMathJax(),
+  
   sidebarPanel(
     wellPanel(
       sliderInput("n", 
@@ -70,15 +70,13 @@ ui <-shinyUI(fluidPage(
                   h2("Informasi Aplikasi"),
                   div(p("Tujuan aplikasi Shiny ini adalah untuk mendeskripsikan Teorema
           Limit Pusat untuk proporsi. Berdasarkan teorema ini, ketika
-          ukuran sampelnya besar (banyak gagal atau suksesnya minimal 10), 
+          ukuran sampelnya besar (banyak sukses atau gagalnya minimal 10), 
           distribusi sampling proporsinya mendekati
           normal dengan rerata yang sama dengan proporsi populasinya dan 
           simpangan baku yang sama dengan akar kuadrat dari hasil kali 
           proporsi populasi dan satu dikurangi proporsi tersebut, kemudian 
-          dibagi dengan ukuran sampelnya, yang dapat dinyatakan seperti 
-                        berikut."),
+          dibagi dengan ukuran sampelnya."),
                       align = "justify"),
-                  div(p("$$SE = \\sqrt{\\frac{p(1-p)}{n}}$$")),
                   div(p("Aplikasi ini merupakan bentuk modifikasi (atau 
           lebih tepatnya terjemahan) dari",
                         a("aplikasi serupa", href = 
